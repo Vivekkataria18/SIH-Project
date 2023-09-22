@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="globals.css" />
+</head>
+<body>
+    <header>
+        <img src="ashoka.png" alt="Center Image" class="header-image-center" />
+        <img src="digitalindia.png" alt="TopRight Image" class="header-image-top-Right" />
+    </header>
+    
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    
+    <main>
+        <div class="button-container">
+            <button class="header-button">Home</button>
+            <button class="header-button">Services</button>
+            <button class="header-button">Contact Us</button>
+            <a href="login.html"><button class="header-button">Login</button></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="background-image"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Language Translator</h1>
+        
+        <a href="login.html"><div class="login-button-container">
+            <button id="loginButton">Login</button>
+        </div></a>
+        <br>
+        <label for="sourceText">Enter Text:</label>
+        <textarea id="sourceText" rows="5" placeholder="Enter text to translate..."></textarea>
+        <br>
+        <div>
+            <label for="translationOutput">Translation:</label>
+            <textarea id="translationOutput" rows="5" placeholder="Text Generated..."></textarea>
+        </div>
+        <select id="translationDirection">
+            <option value="en-hi">Translate to Hindi</option>
+            <option value="hi-en">Translate to English</option>
+        </select>
+        <br>
+        <br>
+        <button id="translateButton" class="translate-button">Translate</button>
+        <div id="thankYouMessage"></div>
+    </main>
+    <footer>
+        <!--<hr>
+        <img src="first.png" alt="Footer Image" class="footer-image" />
+        <hr>-->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

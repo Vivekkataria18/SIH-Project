@@ -1,0 +1,206 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1500px;
+    height: 2528px;
+}
+
+header {
+    text-align: left;
+    background-color: #535353;
+    position: relative;
+    
+}
+
+
+.header-image-top-left {
+    max-width: 120px; /* Set the maximum width of the top-left image */
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+}
+
+.header-image-center {
+    max-width: 55px; /* Set the maximum width of the center image */
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 69%; /* Center the image vertically */
+    left: 15px; /* Center the image horizontally */
+    /*transform: translate(-20%, -20%); /* Center the image perfectly */
+}
+
+.header-image-top-Right {
+    max-width: 100px; /* Set the maximum width of the top-left image */
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    Right: 20px; /* Adjust the left position as needed */
+}
+
+.header-image-Right {
+    max-width: 200px; /* Set the maximum width of the top-left image */
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 30px; /* Adjust the top position as needed */
+    Right: 60px; /* Adjust the left position as needed */
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: none;
+    padding: 5px;
+}
+
+.header-button {
+    background-color: #b0b0b0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0px;
+    margin: 0 25px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.header-button:hover {
+    background-color: #737373;
+}
+
+.background-image {
+    background-image: url('parliament.png'); /* Replace with your image URL */
+    background-size: 700px 400px; /* Set the width and height */
+    background-repeat: no-repeat;
+    background-position: 0% center; /* Shift the image to the extreme left */
+    opacity: 0.6;
+    height: 400px; /* Set the height */
+    width: 800px; /* Set the width */
+    margin: 0; /* Remove margin to fully shift it to the left */
+    margin-top: 0px; /* Adjust margin-top as needed */
+}
+
+
+/* Update the button styles for better visibility */
+button {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0565cb;
+}
+
+/* Update form input styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Center the login form */
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Add some transparency for better visibility */
+    border-radius: 10px;
+}
+
+/* Update the button styles within the login form */
+.login-form button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+select:hover, button:hover {
+    background-color: #0565cb;
+}
+
+#thankYouMessage {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Update the footer background color */
+
+
+/* Add these styles to change button colors */
+.translate-button {
+    background-color: #b6b6b6; /* Default background color */
+    position: Center;
+    color: rgb(0, 0, 0); /* Default text color */
+    transition: background-color 0.3s, 
+    color 0.3s; /* Smooth transition on hover */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.translate-button:hover {
+    background-color: #6d6d6d; /* Background color on hover */
+    position: Center;
+    color: rgb(0, 0, 0); /* Text color on hover */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
