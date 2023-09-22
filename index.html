@@ -10,6 +10,7 @@
 <body>
     <header>
         <img src="ashoka.png" alt="Center Image" class="header-image-center" />
+        <!-- <h1></h1> Image of website name -->
         <img src="digitalindia.png" alt="TopRight Image" class="header-image-top-Right" />
     </header>
     
@@ -24,17 +25,47 @@
     
     <main>
         <div class="button-container">
-            <button class="header-button">Home</button>
+            <button class="header-button" onclick="window.location.href = 'index.html'">Home</button>
             <button class="header-button">Services</button>
-            <button class="header-button">Contact Us</button>
-            <a href="login.html"><button class="header-button">Login</button></a>
+            <button class="header-button" onclick="window.location.href = 'contact.html'">Contact Us</button>
+            <button class="header-button" onclick="window.location.href = 'login.html'">Login</button>
         </div>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <div class="background-image"></div>
+        <div class="background-image center"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- <button class="dropdown-button" onclick="toggleDropdown()">Dropdown</button> -->
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown(1)">DATA ORGANISATION</button>
+                <div id="dropdown-content-1" class="dropdown-content">
+                    <a href="#"><br>With our data organising tool all of your previously translated data is stored safe with us.Just login and begin where you left off.</a>   
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown(2)">SPREADSHEET-SUPPORT</button>
+                <div id="dropdown-content-2" class="dropdown-content">
+                    <a href="#"><br>Use this extremally efficient feature to enhance your productivity upload your spreadsheet and get translated entries on the go.</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-button" onclick="toggleDropdown(3)">ADD EXTENSION+</button>
+                <div id="dropdown-content-3" class="dropdown-content">
+                    <a href="#"><br>Use our Extension to integrate your work with our support get translation done on your finger tips.</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <br>
         <br>
@@ -42,8 +73,8 @@
         <br>
         <h1>Language Translator</h1>
         
-        <a href="login.html"><div class="login-button-container">
-            <button id="loginButton">Login</button>
+        <!-- <a href="login.html"><div class="login-button-container"> -->
+            <!-- <button id="loginButton">Login</button> -->
         </div></a>
         <br>
         <label for="sourceText">Enter Text:</label>
@@ -53,20 +84,34 @@
             <label for="translationOutput">Translation:</label>
             <textarea id="translationOutput" rows="5" placeholder="Text Generated..."></textarea>
         </div>
+        <br>
         <select id="translationDirection">
             <option value="en-hi">Translate to Hindi</option>
             <option value="hi-en">Translate to English</option>
         </select>
         <br>
         <br>
+        <br>
+
+        <br>
         <button id="translateButton" class="translate-button">Translate</button>
         <div id="thankYouMessage"></div>
     </main>
-    <footer>
+    <!-- <footer> -->
         <!--<hr>
         <img src="first.png" alt="Footer Image" class="footer-image" />
         <hr>-->
-    </footer>
+    <!-- </footer> -->
     <script src="script.js"></script>
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdown-content");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
