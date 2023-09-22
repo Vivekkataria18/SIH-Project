@@ -6,8 +6,14 @@ body {
     margin: 0;
     padding: 0;
     width: 1500px;
-    height: 1200px;
+    height: 1528px;
 }
+
+.center img {        
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
 
 header {
     text-align: left;
@@ -64,7 +70,7 @@ header {
     font-weight: bold;
     border: none;
     border-radius: 25px;
-    padding: 10px 0px;
+    padding: 10px 12px;
     margin: 0 25px;
     cursor: pointer;
     transition: background-color 0.4s;
@@ -78,19 +84,18 @@ header {
     background-image: url('parliament.png'); /* Replace with your image URL */
     background-size: 700px 400px; /* Set the width and height */
     background-repeat: no-repeat;
-    background-position: 0% center; /* Shift the image to the extreme left */
+    /* background-position: center;  */
     opacity: 0.6;
     height: 400px; /* Set the height */
-    width: 800px; /* Set the width */
-    margin: 0; /* Remove margin to fully shift it to the left */
-    margin-top: 0px; /* Adjust margin-top as needed */
+    width: 700px; /* Set the width */
+    margin: auto; /* Remove margin to fully shift it to the left */
 }
 
 
 /* Update the button styles for better visibility */
 button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #5ae9ae;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     border: none;
     border: none;
@@ -100,8 +105,80 @@ button {
 }
 
 button:hover {
-    background-color: #0565cb;
+    background-color: #7b7b7b;
 }
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    margin: 0 50px;
+    min-width: 200px;
+    min-height: 15px;
+    display: inline-block; /* Add this line */
+}
+
+.dropdown-button {
+    background-color: #5ae9ae;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5ae9ae;
+    border-radius: 15px;
+    min-width: 200px;
+    min-height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-decoration: none; /* Remove underline */
+    z-index: 1;
+}
+/* .dropdown-content { */
+    /* display: none; */
+    /* position: absolute; */
+    /* background-color: #5ae9ae; */
+    /* border-radius: 15px; */
+    /* min-width: 200px; */
+    /* min-height: 150px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* z-index: 1; */
+    /* left: 50%; Center the dropdown content horizontally */
+    /* transform: translateX(-50%); Adjust horizontally by half the width of the content */
+    /* top: calc(100% + 10px); Position it below the button with some space */
+
+.dropdown-content a {
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 30px 10px;
+    margin: 0 25px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    text-decoration: none; /* Remove underline */
+}
+
+
+.dropdown-content a:hover {
+    background-color: #5ae9ae;
+}
+
+/* Adjust positioning of the dropdown content */
+.dropdown-button:hover + .dropdown-content {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+
 
 /* Update form input styles */
 input[type="text"],
@@ -111,7 +188,7 @@ input[type="password"] {
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-bottom: 10px;
 }
 
@@ -126,14 +203,15 @@ input[type="password"] {
 
 /* Update the button styles within the login form */
 .login-form button {
-    width: 100%;
-    background-color: #007BFF;
+    width: 107%;
+    background-color: #5ae9ae;
     color: white;
     font-weight: bold;
     border: none;
     border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
@@ -162,16 +240,17 @@ textarea {
 
 select, button {
     width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 5px;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     font-weight: bold;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 select:hover, button:hover {
-    background-color: #0565cb;
+    background-color: #b3b3b3;
 }
 
 #thankYouMessage {
@@ -192,15 +271,16 @@ select:hover, button:hover {
     transition: background-color 0.3s, 
     color 0.3s; /* Smooth transition on hover */
     border: none;
-    border-radius: 5px;
+    border-radius: 55px;
+    padding: 20px 0px;
     margin-bottom: 10px;
 }
 
 .translate-button:hover {
-    background-color: #6d6d6d; /* Background color on hover */
+    background-color: #5ae9ae; /* Background color on hover */
     position: Center;
     color: rgb(0, 0, 0); /* Text color on hover */
     border: none;
-    border-radius: 5px;
+    border-radius: 55px;
     margin-bottom: 10px;
 }
