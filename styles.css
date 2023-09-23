@@ -100,7 +100,7 @@ header {
     margin: 10px -10px;
 /*     height: 400px; /* Set the height */ */
 /*     width: 650px; /* Set the width */ */
-    position: relative
+    position: relative;
     margin: auto; /* Remove margin to fully shift it to the left */
 }
 
