@@ -93,20 +93,16 @@ header {
 
 .background-image {
     background-image: url('parliament.png'); /* Replace with your image URL */
+    background-size: 650px 400px; /* Set the width and height */
+    background-repeat: no-repeat;
+    margin: 10px 40px;
+    /* background-position: center;  */
     opacity: 0.6;
     margin: 10px -10px;
-    margin: auto;
-    position: relative;
+    height: 400px; /* Set the height */
+    width: 650px; /* Set the width */
+    margin: auto; /* Remove margin to fully shift it to the left */
 }
-/*     background-size: 650px 400px; /* Set the width and height */ */
-/*     background-repeat: no-repeat; */
-/*     margin: 10px 40px; */
-    /* background-position: center;  */
-    
-/*     height: 400px; /* Set the height */ */
-/*     width: 650px; /* Set the width */ */
-/*     margin: auto; /* Remove margin to fully shift it to the left */ */
-
 
 
 /* Update the button styles for better visibility */
@@ -122,7 +118,7 @@ button {
 }
 
 button:hover {
-    background-color: #7b7b7b;
+    background-color: #a4a3a3;
 }
 
 .dropdown-container {
@@ -141,7 +137,7 @@ button:hover {
 
 .dropdown-button {
     background-color: #5ae9ae;
-    color: rgb(123, 123, 123);
+    color: rgb(0, 0, 0);
     font-weight: none;
     border: none;
     border-radius: 15px;
@@ -193,7 +189,7 @@ button:hover {
     padding: 30px 10px;
     margin: 0 25px;
     cursor: pointer;
-/*     position: relative; */
+    position: relative;
     transition: background-color 0.4s;
     text-decoration: none; /* Remove underline */
 }
@@ -316,4 +312,3 @@ select:hover, button:hover {
     border-radius: 55px;
     margin-bottom: 10px;
 }
-
