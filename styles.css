@@ -5,8 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 1500px;
-    height: 1528px;
+    position: relative;
 }
 hr {
     width: 100%;
@@ -18,6 +17,7 @@ hr {
 h1 {
     font-size: 24px;
 }
+
 
 .center img {        
     display:block;
@@ -96,11 +96,11 @@ header {
     background-size: 650px 400px; /* Set the width and height */
     background-repeat: no-repeat;
     margin: 10px 40px;
-    background-position: center; 
+    /* background-position: center;  */
     opacity: 0.6;
     margin: 10px -10px;
-    height: 400px; /* Set the height */ 
-    width: 650px; /* Set the width */ 
+    height: 400px; /* Set the height */
+    width: 650px; /* Set the width */
     margin: auto; /* Remove margin to fully shift it to the left */
 }
 
@@ -129,8 +129,8 @@ button:hover {
 
 .dropdown {
     position: relative;
-    margin: 0 50px;
-    min-width: 200px;
+    margin: 0 30px;
+    min-width: 210px;
     min-height: 15px;
     display: inline-block; /* Add this line */
 }
@@ -138,7 +138,7 @@ button:hover {
 .dropdown-button {
     background-color: #5ae9ae;
     color: rgb(123, 123, 123);
-    font-weight: bold;
+    font-weight: none;
     border: none;
     border-radius: 15px;
     padding: 20px 30px;
@@ -150,8 +150,9 @@ button:hover {
     position: absolute;
     background-color: #5ae9ae;
     border-radius: 15px;
-    min-width: 200px;
-    min-height: 150px;
+    min-width: 140px;
+    min-height: 90px;
+    /* position: relative; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-decoration: none; /* Remove underline */
     z-index: 1;
@@ -159,10 +160,11 @@ button:hover {
 .dropdownn-content {
     display: none;
     position: absolute;
-    background-color: #c4c4c4;
+    background-color: #a1a1a1;
     border-radius: 15px;
-    min-width: 200px;
-    min-height: 150px;
+    min-width: 160px;
+    min-height: 90px;
+    /* position: relative; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     text-decoration: none; /* Remove underline */
     z-index: 1;
@@ -187,6 +189,7 @@ button:hover {
     padding: 30px 10px;
     margin: 0 25px;
     cursor: pointer;
+/*     position: relative; */
     transition: background-color 0.4s;
     text-decoration: none; /* Remove underline */
 }
@@ -274,7 +277,7 @@ select, button {
 }
 
 select:hover, button:hover {
-    background-color: #b3b3b3;
+    background-color: #8b8b8b;
 }
 
 #thankYouMessage {
@@ -309,3 +312,4 @@ select:hover, button:hover {
     border-radius: 55px;
     margin-bottom: 10px;
 }
+
