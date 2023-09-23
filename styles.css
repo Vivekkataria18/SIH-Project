@@ -5,8 +5,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 1500px;
-    height: 1528px;
+    position: relative;
+}
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #e5e5e5; /* Adjust the color as needed */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+h1 {
+    font-size: 26px;
 }
 
 .center img {        
@@ -41,11 +50,11 @@ header {
 }
 
 .header-image-top-Right {
-    max-width: 100px; /* Set the maximum width of the top-left image */
+    max-width: 120px; /* Set the maximum width of the top-left image */
     height: auto;
     position: absolute; /* Position the image absolutely */
     top: 20px; /* Adjust the top position as needed */
-    Right: 20px; /* Adjust the left position as needed */
+    Right: 10px; /* Adjust the left position as needed */
 }
 
 .header-image-Right {
@@ -69,10 +78,11 @@ header {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 25px;
-    padding: 10px 12px;
-    margin: 0 25px;
+    border-radius: 20px;
+    padding: 13px 19px;
+    margin: 0 10px;
     cursor: pointer;
+    position: relative;
     transition: background-color 0.4s;
 }
 
@@ -82,12 +92,14 @@ header {
 
 .background-image {
     background-image: url('parliament.png'); /* Replace with your image URL */
-    background-size: 700px 400px; /* Set the width and height */
+    background-size: 650px 400px; /* Set the width and height */
     background-repeat: no-repeat;
+    margin: 10px 40px;
     /* background-position: center;  */
     opacity: 0.6;
+    margin: 10px -10px;
     height: 400px; /* Set the height */
-    width: 700px; /* Set the width */
+    width: 650px; /* Set the width */
     margin: auto; /* Remove margin to fully shift it to the left */
 }
 
@@ -95,7 +107,7 @@ header {
 /* Update the button styles for better visibility */
 button {
     background-color: #5ae9ae;
-    color: rgb(0, 0, 0);
+    color: rgb(86, 86, 86);
     font-weight: bold;
     border: none;
     border: none;
@@ -124,7 +136,7 @@ button:hover {
 
 .dropdown-button {
     background-color: #5ae9ae;
-    color: rgb(0, 0, 0);
+    color: rgb(123, 123, 123);
     font-weight: bold;
     border: none;
     border-radius: 15px;
@@ -136,6 +148,17 @@ button:hover {
     display: none;
     position: absolute;
     background-color: #5ae9ae;
+    border-radius: 15px;
+    min-width: 200px;
+    min-height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-decoration: none; /* Remove underline */
+    z-index: 1;
+}
+.dropdownn-content {
+    display: none;
+    position: absolute;
+    background-color: #c4c4c4;
     border-radius: 15px;
     min-width: 200px;
     min-height: 150px;
@@ -157,7 +180,7 @@ button:hover {
     /* top: calc(100% + 10px); Position it below the button with some space */
 
 .dropdown-content a {
-    color: black;
+    color: rgb(106, 106, 106);
     border: none;
     border-radius: 25px;
     padding: 30px 10px;
@@ -278,8 +301,9 @@ select:hover, button:hover {
 
 .translate-button:hover {
     background-color: #5ae9ae; /* Background color on hover */
+    font-weight: bold;
     position: Center;
-    color: rgb(0, 0, 0); /* Text color on hover */
+    color: rgb(27, 27, 27); /* Text color on hover */
     border: none;
     border-radius: 55px;
     margin-bottom: 10px;
